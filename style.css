@@ -2,21 +2,27 @@ body {
     text-align: center; 
     font-family: sans-serif;
     background-color: floralwhite;
+    margin: 0;
 }
 
 /* Layout styling */
 #from > div, #to > div {
     padding: 40px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 /* Buttons shared style */
 .base-btn {
-    padding: 20px;
-    border-radius: 10px;
+    padding: 35px;
+    border-radius: 30px;
     cursor: pointer;
     transition: transform 0.2s ease;
+}
+#convert {
+    cursor: pointer;
+    background-color: cadetblue;
+    font-family: cursive;
 }
 
 /* Button hover effect */
