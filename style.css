@@ -1,0 +1,54 @@
+body {
+    text-align: center; 
+    font-family: sans-serif;
+    background-color: floralwhite;
+}
+
+/* Layout styling */
+#from > div, #to > div {
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Buttons shared style */
+.base-btn {
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Button hover effect */
+.base-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Selected state mimics hover scale */
+.base-btn.selected {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px black;
+}
+
+/* Individual base button colors using attribute selectors */
+.base-btn[data-base="2"] {
+    background-color: aqua;
+}
+
+.base-btn[data-base="8"] {
+    background-color: red;
+}
+
+.base-btn[data-base="10"] {
+    background-color: chartreuse;
+}
+
+.base-btn[data-base="16"] {
+    background-color: gold;
+}
+
+/* Optional: Style the result paragraph */
+#result {
+    font-size: 1.2em;
+    margin-top: 20px;
+}

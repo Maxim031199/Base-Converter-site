@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="./style.css"/>
+    <title>Number base convertion</title>
+</head>
+    <body>
+        <h1>Base Converter</h1>
+        <p>Convert numbers between different bases (Binary, Decimal, Hex, Octal).</p>
+
+        <section id="from">
+            <div>
+                <p><b>FROM</b></p> 
+                <button class="base-btn" data-base="2"><b>Binary(2)</b></button>
+                <button class="base-btn" data-base="8"><b>Octal(8)</b></button>
+                <button class="base-btn" data-base="10"><b>Decimal(10)</b></button>
+                <button class="base-btn" data-base="16"><b>Hexadecimal(16)</b></button>
+            </div>
+        </section>
+    
+        <br>
+        <label for="number">Enter a number</label>
+        <input id="number" type="text" name="inputNumber"/>
+        
+        <section id="to">
+            <div>
+                <p><b>TO</b></p> 
+                <button class="base-btn" data-base="2"><b>Binary(2)</b></button>
+                <button class="base-btn" data-base="8"><b>Octal(8)</b></button>
+                <button class="base-btn" data-base="10"><b>Decimal(10)</b></button>
+                <button class="base-btn" data-base="16"><b>Hexadecimal(16)</b></button>
+            </div>
+        </section>
+        <p id="result"><b>Result:</b></p>
+        <button id="convert"><b>Convert</b></button>
+        <script src="main.js"></script>  
+        
+    </body>
+
+</html>
+
+
+
+
+
+
+
