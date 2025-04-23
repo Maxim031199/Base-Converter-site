@@ -1,16 +1,15 @@
 body {
-    text-align: center; 
+    text-align: center;
     font-family: sans-serif;
     background-color: floralwhite;
     margin: 0;
-    padding: 1rem;
-    box-sizing: border-box;
+    padding: 0;
 }
 
 /* Layout styling */
 #from > div, #to > div {
-    padding: 1rem;
-    gap: 0.5rem;
+    padding: 10px;
+    gap: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -18,27 +17,29 @@ body {
 
 /* Buttons shared style */
 .base-btn {
-    padding: 1rempx;
-    border-radius: 1rem;
+    padding: 10px;
+    border-radius: 20px;
     cursor: pointer;
     transition: transform 0.2s ease;
-    margin: 0.5rem;
-    flex-wrap: wrap;
-    
+    margin: 5px;
+    font-size: 0.9em;
+    flex: 0 0 auto;
 }
+
 #convert {
     cursor: pointer;
     background-color: cadetblue;
     font-family: cursive;
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.5rem;
-    margin: 1rem auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px auto;
 }
 
 /* Button hover effect */
 .base-btn:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
+
 
 /* Selected state mimics hover scale */
 .base-btn.selected {
@@ -50,65 +51,46 @@ body {
 .base-btn[data-base="2"] {
     background-color: aqua;
 }
-
 .base-btn[data-base="8"] {
     background-color: red;
 }
-
 .base-btn[data-base="10"] {
     background-color: chartreuse;
 }
-
 .base-btn[data-base="16"] {
-    background-color: gold ;
+    background-color: gold;
 }
 
 /* Optional: Style the result paragraph */
 #result {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
+    font-size: 1.2em;
+    margin-top: 20px;
     word-break: break-word; /* Prevents overflow on small screens */
 }
 
 input[type="text"], button#convert {
-    width: auto; /* Natural width based on content */
+    width: auto;
+    max-width: 300px;
     margin: 10px auto;
     display: block;
     font-size: 1.1em;
-    padding: 0.5rem 1rem; /*Add some padding for better appearance */
- }
-
-h1 {
-    font-size: 1.8rem;
-    margin-top: 1rem;
 }
 
-
-p {
-    margin: 0.5rem 0;
-}
-
-@media (min-width: 600px) {
+/* Media queries for larger screens */
+@media (min-width: 768px) {
     .base-btn {
-        width: auto; /* Return to natural width on larger screens */
-        padding: 1.5rem;
-    }   
-
-
-    h1 {
-        font-size: 2.2rem;
+        padding: 15px;
+        font-size: 1em;
     }
-
-    #from > div, #to > div {
-        gap: 1rem;
+    
+    #convert {
+        padding: 12px 25px;
     }
-
-
 }
 
-
-@media (min-width: 900px) {
+/* For even larger screens */
+@media (min-width: 1024px) {
     .base-btn {
-        padding: 2rem;
+        padding: 20px;
     }
 }
