@@ -39,7 +39,7 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     margin: 10px auto;
-    width: 120px; /* Fixed width */
+    width: 100px; /* Fixed width */
 }
 
 /* Button hover effect */
@@ -75,7 +75,7 @@ body {
 }
 
 input[type="text"] {
-    width: 60%; /* Narrower width */
+    width: 20%; /* Narrower width */
     max-width: 250px;
     margin: 10px auto;
     display: block;
