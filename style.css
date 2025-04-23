@@ -40,10 +40,9 @@ body {
     transform: scale(1.1);
 }
 
-
 /* Selected state mimics hover scale */
 .base-btn.selected {
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 0 0 10px black;
 }
 
