@@ -1,0 +1,20 @@
+.box{
+    height: 200px;
+    width: 200px;
+    
+}
+#container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#main-box {
+    margin: auto;
+    border: 2px solid black;
+
+}
+#description {
+    display: flex;
+    justify-content: center;
+}
