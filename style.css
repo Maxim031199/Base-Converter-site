@@ -44,7 +44,7 @@ body {
 }
 
 .base-btn[data-base="16"] {
-    background-color: gold;
+    background-color: gold ;
 }
 
 /* Optional: Style the result paragraph */
@@ -52,3 +52,4 @@ body {
     font-size: 1.2em;
     margin-top: 20px;
 }
+
